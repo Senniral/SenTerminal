@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEEEEE;
+}
+.nav > nav > ul > li{
+    display: inline-block;
+}
+
+.nav{
+    height: 65px;
+    background-color: #181818;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+div > nav > ul > li{
+    color: white;
+    font-size: 25px;
+}
+nav{
+    text-align: center;
+    margin-right: 21px;
+}
+
+.portfolio{
+    text-align: center;
+    margin-top: 150px;
+}
+
+a:hover{
+    color: #BFDB38;
+    transition: ease-in-out 0.5s;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.span{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+  }
+  .span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .span a:before,
+  .span a:after{
+    position: absolute;
+    content: "Get Started";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  .span a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  .span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+  
+  .terminal {
+    padding: 20px;
+  }
+  /* Style the input line */
+  .terminal input {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+  }
+  /* Style the output text */
+  .terminal .output {
+    white-space: pre-wrap; /* Preserve whitespace */
+  }
+  .dadiv{
+      margin-top: 10px;
+  }
+  .escape-button {
+    position: absolute;
+    /* Add styles for button appearance */
+  }
+
+  #random-button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}

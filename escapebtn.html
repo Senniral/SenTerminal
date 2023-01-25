@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     
+    <button id="random-button" onclick="congrats()">catch me</button>
+    <script>
+        const button = document.getElementById("random-button");
+        button.addEventListener("mouseover", moveButton);
+
+        function moveButton() {
+            const x = Math.floor(Math.random() * window.innerWidth);
+            const y = Math.floor(Math.random() * window.innerHeight);
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+
+        function congrats(){//if somehow clicked sillybtn
+            alert("You actually made it?! congrats :)")
+        }
+    </script>
+
+    <script src="./index.js"></script>
+</body>
+</html>
